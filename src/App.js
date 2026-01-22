@@ -23,9 +23,9 @@ function App() {
   // const [fname, setName] = useState("");
   // const [users, setUsers] = useState([]);
 
-  // const showAlert = () => {
-  //   alert("Button Clicked");
-  // };
+  const showAlert = () => {
+    alert("Button Clicked");
+  };
 
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/users")
@@ -39,13 +39,13 @@ function App() {
       <p>Welcome to React</p>
       <Profile a={mname}/>
       <Count b={count}/>
-      {/* <button onClick={() => setCount(count + 1)}>
+      <button onClick={() => setCount(count + 1)}>
         Increment count
       </button>
 
       <button onClick={showAlert}>Click Me</button>;
 
-      <input value={fname} onChange={e => setName(e.target.value)} />
+      {/* <input value={fname} onChange={e => setName(e.target.value)} />
       <p>Your Name: {fname}</p>
 
       <ul>
