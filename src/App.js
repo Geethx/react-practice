@@ -18,8 +18,8 @@ function App() {
     setUsers(users.filter(user => user.id !== id));
   };
   // const todos = [{id: 1, text: "Learn React"}, {id: 2, text: "Practice More"}];
-  // const name = "Jeewan";
-  // const [count,setCount] = useState(0);
+  const mname = "Jeewan";
+  const [count,setCount] = useState(0);
   // const [fname, setName] = useState("");
   // const [users, setUsers] = useState([]);
 
@@ -35,11 +35,11 @@ function App() {
 
   return(
     <div>
-      {/* <h1>Hello {name}</h1>
+      <h1>Hello {mname}</h1>
       <p>Welcome to React</p>
-      <Profile a={name}/>
+      <Profile a={mname}/>
       <Count b={count}/>
-      <button onClick={() => setCount(count + 1)}>
+      {/* <button onClick={() => setCount(count + 1)}>
         Increment count
       </button>
 
@@ -59,7 +59,7 @@ function App() {
         {todos.map(todo => (
           <li key={todo.id}>{todo.text}</li>
         ))}
-      </ol> */}
+      </ol>  */}
 
       <input value={name} onChange={e => setName(e.target.value)} />
       <button onClick={addUser}>Add User</button>
